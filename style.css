@@ -1,0 +1,41 @@
+body {
+	background: url(http://www.psdgraphics.com/file/colorful-triangles-background.jpg) no-repeat center fixed;
+	background-size: cover;
+	/* i am a comment */
+}
+
+
+form {
+	color: yellow;
+	font-family: arial;
+	font-size: 20px;
+}
+
+h1,#myh1 {
+	color: yellow;
+	background: #D2691E; 
+	font-family: Arial; 
+	text-align: center;
+}
+
+div.mydiv {
+	height: 80px;
+	background-image: url(http://www.psdgraphics.com/file/colorful-triangles-background.jpg);
+}
+
+
+#transfer  {
+	color: yellow;
+	font-size: 36px;
+}
+
+#myh1id {
+	color: yellow;
+}
+
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

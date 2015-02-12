@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!-- Comment -->
+
+<html>
+
+	<head>
+
+			<Title>Page 1 JavaScript</Title>
+			<link rel="stylesheet" href="style.css"/>
+
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+
+			<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+			<script>
+
+					var votes = 0
+
+					function upvote() {
+						votes = votes + 1;
+						$('#votes').text(votes);
+					}
+
+					function downvote() {
+						votes = votes - 1;
+						$('#votes').text(votes);
+					}
+
+					function changecolour() {
+						console.log('Hello');
+						$('body').css('background', 'none');
+						$('body').css('background-color', 'black');
+					}
+
+					function convert() {
+						var cel= $('#celcius').val();
+						var fahrenheit = cel*9/5+32;
+						$('#fahrenheit').val(fahrenheit);
+					}
+
+			</script>
+
+	</head>
+
+	
+	<body>
+
+		<label>celcius</label><input id="celcius" type="text">
+		<br>
+		<br>
+		<label>fahrenheit</label><input id="fahrenheit" type="text">
+		
+			<h1 id="votes">0</h1>	
+
+			<button onclick="upvote()" style="width:150px" class="btn btn-danger">+1</button>
+			<button onclick="downvote()" style="width:150px" class="btn btn-danger">-1</button>
+			<button onclick="changecolour()" class="btn btn-info"> Change colour! </button>
+			<button onclick="convert()" class="btn btn-info"> CONVERT </button>
+	</body>
+
+</html>
